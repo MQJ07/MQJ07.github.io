@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohammed Qadir Jelani | Resume</title>
+  <style>
+/* Reset some default styles */
+body,
+h1,
+h2,
+ul,
+li,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #000;
+  color: #fff;
+}
+
+.container {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill='white'%3E%3Cpath d='M34.7 0l5.3 12.2L45.2.6l8.2 6-4.7 9.3 10.1-.8L64.4 25l.3 10.2 9-5.2 2.6 9.3 9.3-5.1 5.1 7.2h12.3l-9.3 5.2 1.6 10.1-8.5 3.4 3.3 8.7-9.1 3-4.8 9.1-9.1-4.6-2.9 9-7.7-4.4-4.2 6.4-9.7 1.2-1.2 8.4-3.3-2.9-8.4 8.5-3.3-7.7-6.4-3.7-4.3-6.5 9.7-1-1.4-4.6-9-2.9-9 3.2-8.7-8.5-3.2 1.1-10.1-9-3.4 3.4-8.8L0 51.2l1.6 10.3 9 3.3-2.8 8.6 8.5 3.4-6.5 9.5 4.4 1.1 9-4.7 3 9.1 9.3 4.6-4.8-9-1.4-1.1-6.4-9.7-4.3-3.6-6.5-9.6 8.4-2.8 1.3-8.3 3.3 3-9-2.9-8.6 8.7-2.9zm3.1 17.2c-3.4 0-6.1 2.8-6.1 6.2 0 3.4 2.7 6.1 6.1 6.1 3.4 0 6.1-2.8 6.1-6.1 0-3.4-2.7-6.2-6.1-6.2zm25.1 4.3c-4 0-7.2 3.2-7.2 7.2 0 4 3.2 7.2 7.2 7.2 4 0 7.2-3.2 7.2-7.2 0-4-3.2-7.2-7.2-7.2zm-50.7 10c-3.3 0-6 2.7-6 6 0 3.3 2.7 6 6 6 3.4 0 6.1-2.7 6.1-6 0-3.3-2.8-6-6.1-6zm78.6 6.7c-3.5 0-6.2 2.9-6.2 6.3 0 3.4 2.7 6.1 6.2 6.1 3.4 0 6.2-2.8 6.2-6.1 0-3.4-2.8-6.3-6.2-6.3zm-28.3 8.1c-3.5 0-6.2 2.9-6.2 6.3 0 3.4 2.7 6.1 6.2 6.1 3.4 0 6.2-2.8 6.2-6.1-.1-3.4-2.8-6.3-6.2-6.3zm50.7 6.2c-3.4 0-6.2 2.8-6.2 6.2 0 3.4 2.8 6.2 6.2 6.2 3.4 0 6.2-2.8 6.2-6.2 0-3.4-2.8-6.2-6.2-6.2z'/%3E%3C/g%3E%3C/svg%3E");
+  animation: stars 50s linear infinite;
+}
+
+@keyframes stars {
+  0% {
+    background-position: 0 0, 0 0;
+  }
+  100% {
+    background-position: 100px 100px, 50px 50px;
+  }
+}
+
+header {
+  text-align: center;
+  padding: 1rem;
+}
+
+header h1 {
+  margin-bottom: 0.5rem;
+}
+
+nav {
+  margin-top: 1rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 1rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.main-content {
+  padding: 2rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+h2 {
+  border-bottom: 2px solid #fff;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+a {
+  color: #007bff;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ 
+ </style>
+<script>
+  // Smooth scroll functionality for navigation links
+  const navLinks = document.querySelectorAll('nav a');
+
+  navLinks.forEach(link => {
+    link.addEventListener('click', smoothScroll);
+  });
+
+  function smoothScroll(e) {
+    e.preventDefault();
+    const targetId = e.target.getAttribute('href');
+    const targetSection = document.querySelector(targetId);
+
+    if (targetSection) {
+      const headerOffset = 64; // Adjust this value to accommodate the header height
+      const targetOffset = targetSection.getBoundingClientRect().top;
+      const offsetPosition = targetOffset - headerOffset;
+
+      window.scrollBy({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    }
+  }
+</script>
+
+</head>
+
+<body>
+  <header>
+    <h1>Mohammed Qadir Jelani</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#projects">Projects</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#interests">Interests</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        Hello! I am Mohammed Qadir Jelani, a passionate Computer Science Engineering student. I love exploring
+        new technologies, especially in the field of Machine Learning, Data Science, and Deep Learning.
+      </p>
+      <p>
+        You can reach me via email at <a href="mailto:mjelani@gitam.in">mjelani@gitam.in</a> or connect with me on
+        LinkedIn: <a href="https://www.linkedin.com/in/qadirjelani" target="_blank">LinkedIn Profile</a>.
+      </p>
+    </section>
+
+    <section id="skills">
+      <h2>Technical Skills</h2>
+      <ul>
+        <li>Programming Languages: Python, Java, R, C, C++</li>
+        <li>Databases: Oracle SQL Developer</li>
+        <li>Web Technologies: HTML5, CSS, and JavaScript</li>
+        <li>Operating System: Windows, Linux</li>
+        <li>IDE/Tools: MS Office, Power BI, Tableau</li>
+      </ul>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <ul>
+        <li>
+          <strong>Bachelor of Technology in Computer Science Engineering</strong><br>
+          GITAM Institute of Technology and Management<br>
+          June 2020 - Present<br>
+          CGPA: 9.01
+        </li>
+        <li>
+          <strong>12th Board of Intermediate Education Andhra Pradesh</strong><br>
+          Ascent Junior College<br>
+          June 2018 - June 2020<br>
+          Percentage: 89.87%
+        </li>
+        <li>
+          <strong>Board of Secondary Education Andhra Pradesh</strong><br>
+          Pereira English Noble School<br>
+          2018<br>
+          GPA: 10.0
+        </li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li>
+          <strong>6-week Summer Internship at Alcovex Product Studio</strong><br>
+          <em>Work Details:</em> Training ML/DL Models, Computer Vision, Creating Fast Api’s and packaging them into
+          Docker Images.
+        </li>
+        <li>
+          <strong>6-week project at Knowledge Solutions India</strong><br>
+          <em>Project Details:</em> Predict the price of Diamonds from Diamond dataset using regression-<a href="https://github.com/MQJ07/MQJelaniRepository/blob/main/Price%20of%20diamond%20prediction.ipynb"
+            target="_blank">link</a>
+        </li>
+        <li>
+          <strong>Classification emotions of a person</strong><br>
+          <em>Project Details:</em> Machine learning project to predict the emotion of a person using images-<a href="https://github.com/MQJ07/MQJelaniRepository/blob/main/classifyemotions.ipynb"
+            target="_blank">link</a>
+        </li>
+        <li>
+          <strong>Deep learning model using CNN that predicts the plant is rare, endemic or endangered</strong><br>
+          <em>Project Details:</em> Deep learning project to classify the species of the plant if it is endemic,
+          rare, vulnerable, or endangered-<a href="https://github.com/MQJ07/Plants_classifierrepo"
+            target="_blank">link</a>
+        </li>
+        <li>
+          <strong>Predicting the Gender and Age of a person with the help of image using Machine Learning</strong>-<a href="https://github.com/MQJ07/MQJelaniRepository/blob/main/AGE_Gender_Detection.ipynb"
+            target="_blank">link</a>
+        </li>
+        <li>
+          <strong>Classifying Spam and Ham Email using NLP</strong>-<a href="https://github.com/MQJ07/MQJelaniRepository/blob/main/EmailSpam.ipynb"
+            target="_blank">link</a>
+        </li>
+      </ul>
+    </section>
+
+    <section id="certifications">
+      <h2>Certifications</h2>
+      <ul>
+        <li>Certification for completion for Data Science and Analytics using Python and R - <a
+            href="https://github.com/MQJ07/MQJ07/blob/main/Jelani_Quantum_learning_DScertificate.pdf" target="_blank">Certificate link</a></li>
+        <li>Coursera Certification Python for everybody - <a href="https://github.com/MQJ07/Coursera_Certifications/blob/main/Pythonforeverybody.pdf" target="_blank">Certificate
+            link</a></li>
+        <li>Coursera Certification Machine Learning with Python - <a href="https://github.com/MQJ07/Coursera_Certifications/blob/main/Machine_learning_with_python.pdf"
+            target="_blank">Certificate link</a></li>
+      </ul>
+    </section>
+
+    <section id="interests">
+      <h2>Interests</h2>
+      <ul>
+        <li>Machine Learning</li>
+        <li>Data Science and Analytics</li>
+        <li>Deep Learning</li>
+        <li>Natural Language Processing</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>
+        You can contact me at: <br>
+        Email: <a href="mailto:mjelani@gitam.in">mjelani@gitam.in</a> <br>
+      </p>
+      <p>
+        GitHub: <a href="https://github.com/MQJ07/MQJelaniRepository" target="_blank">https://github.com/MQJ07/MQJelaniRepository</a>
+      </p>
+    </section>
+  </main>
+</body>
+
+</html>
